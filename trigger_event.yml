@@ -1,0 +1,14 @@
+name: worflows for issues
+on:
+  issues:
+    types: [opened]
+
+env:
+  ISSUE_TITLE: "une issue a été ouverte"
+jobs:
+  issue-opened:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display issue openened message
+        uses: "$ISSUE_TITLE"
+      
