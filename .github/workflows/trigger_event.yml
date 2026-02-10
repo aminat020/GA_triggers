@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Display issue openened message
-        uses: "$ISSUE_TITLE"
+        run: echo "$ISSUE_TITLE"
       
