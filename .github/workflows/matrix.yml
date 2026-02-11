@@ -1,4 +1,4 @@
-name: matrix_fruits
+name: matrix fruit
 on:
   push:
     branches: [ main ]
