@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    matrix_fruits:
+    liste_de_fruits:
       strategy:
         fail-fast: true
         matrix:
