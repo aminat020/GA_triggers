@@ -7,7 +7,7 @@ env:
 jobs:
   merge_PR:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
     steps:
       - name: Check if PR is merged
-        if: github.event.pull_request.merged == true
         run: echo "$PR_MERGED"
