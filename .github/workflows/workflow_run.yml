@@ -1,0 +1,14 @@
+name: workflow_run_done
+env:
+  WORKFLOW_RUN_DONE: "le workflow worflows for issues est terminé"
+on:
+  workflow_run:
+    workflows: ["worflows for issues"]
+      types: 
+        - completed
+jobs:
+  workflow_run_done:
+    runs-on: ubuntu-latest
+    steps:
+      - name: le workflow worflows for issues est terminé
+        run: echo "$WORKFLOW_RUN_DONE"
