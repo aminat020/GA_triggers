@@ -3,7 +3,7 @@ env:
   WORKFLOW_RUN_DONE: "le workflow worflows for issues est terminé"
 on:
   workflow_run:
-    workflows: ["worflows for issues"]
+    workflows: [worflows for issues]
       types: 
         - completed
 jobs:
