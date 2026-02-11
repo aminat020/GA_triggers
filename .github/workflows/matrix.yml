@@ -4,14 +4,13 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  liste_de_fruits:
     runs-on: ubuntu-latest
-    liste_de_fruits:
-      strategy:
-        fail-fast: true
-        matrix:
-          fruits: [pomme, poire, banane, pêche]
-          nom: [paul, pierre, jack]
+    strategy:
+      fail-fast: true
+      matrix:
+        fruits: [pomme, poire, banane, pêche]
+        nom: [paul, pierre, jack]
     steps:
       - name: Affiche le fruit et le nom
         run: echo "le fruit est ${{ matrix.fruits }} et le nom est ${{ matrix.nom }}"
