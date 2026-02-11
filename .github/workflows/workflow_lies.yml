@@ -1,0 +1,17 @@
+name: workflow_lies
+on: workflow_dispatch
+env:
+  WORKFLOW_LANCE: "le workflow a été lancé"
+  WORKFLOW_FINI: "le workflow c'est terminé"
+jobs:
+  workflow_triggered:
+    runs-on: ubuntu-latest
+    steps:
+      - name: le workflow a été lancé
+        run: echo "$WORKFLOW_LANCE"
+  workflow_suivant:
+    needs: workflow_triggered
+    runs-on: ubuntu-latest
+    steps:
+      - name: le workflow précédent et fini
+        run: echo "$WORKFLOW_FINI"
