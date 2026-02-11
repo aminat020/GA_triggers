@@ -13,5 +13,5 @@ jobs:
         nom: [paul, pierre, jack]
     steps:
       - name: Affiche le fruit et le nom
-        run: echo "le fruit est ${{ matrix.fruits }} et le nom est ${{ matrix.nom }}"
+        run: echo "${{ matrix.nom }} aime manger de la ${{ matrix.fruits }}"
   
